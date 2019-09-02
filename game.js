@@ -37,6 +37,7 @@ function hide(evt) {
 }
 
 function updateCounts () {
+  
   var totals = {
     blue: 0,
     green: 0,
@@ -45,6 +46,9 @@ function updateCounts () {
   
   // WRITE CODE HERE TO COUNT BLUE, GREEN, AND INVISIBLE DOTS
 
+  totals.blue = document.getElementsByClassName("blue").length;
+  totals.green = document.getElementsByClassName("green").length;
+  totals.invisible = document.getElementsByClassName("invisible").length;
   // Once you've done the counting, this function will update the display
   displayTotals(totals)
 }
